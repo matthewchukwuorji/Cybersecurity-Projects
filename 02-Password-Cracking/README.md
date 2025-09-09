@@ -29,4 +29,4 @@
 ## Screenshots
 ![FTP Service Detected](./screenshots/ftp-detected.png)  
 ![John the Ripper in Action](./screenshots/john-crack.png)  
-![HASH EXTRACTION](./screenshots/hash_extraction.png)
+![HASH EXTRACTION](./screenshots/HASH%20PROCESS.png)
