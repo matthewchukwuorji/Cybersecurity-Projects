@@ -33,6 +33,6 @@ Perform ethical exploitation to gain shell access on a vulnerable machine.
 ![Port Scan](screenshots/scan_report.png)
 ![Shell](screenshots/shell.png)
 ![Post Exploitation](screenshots/post_exploitation.png)
-![Privilege Escalation](screenshot/priviledge_escalation.png)
+![Privilege Escalation](screenshots/priviledge_escalation.png)
 ![Exploit](screenshots/exploit.png)
 
