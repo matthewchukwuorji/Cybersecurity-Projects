@@ -27,6 +27,5 @@
 - Disable anonymous FTP or weak accounts.
 
 ## Screenshots
-![FTP Service Detected](./screenshots/ftp-detected.png)  
-![John the Ripper in Action](./screenshots/john-crack.png)  
-![HASH EXTRACTION](./screenshots/cracking_process.png)
+![FTP Service Detected](./screenshots/ftp_hash.png)   
+![John the Ripper in Action](./screenshots/cracking_process.png)
