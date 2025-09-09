@@ -24,4 +24,6 @@ This repository contains hands-on ethical hacking and cybersecurity projects I�
 
 ## 🔹 About Me
 I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, and system defense. 
-Connect with me on [LinkedIn](www.linkedin.com/in/matthew-chukwuorji)
+Connect with me on [LinkedIn]()www.linkedin.com/in/matthew-chukwuorji)
+
+
