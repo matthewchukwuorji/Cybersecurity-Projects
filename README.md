@@ -1,29 +1,27 @@
 # Cybersecurity Projects Portfolio
 
-Welcome to my collection of cybersecurity and ethical hacking projects.  
-This repository contains hands-on labs where I practice scanning, exploitation, post-exploitation, and defense techniques.  
+This repository contains hands-on ethical hacking and cybersecurity projects I’ve completed to build my skills in offensive and defensive security.
 
 ---
 
 ## 🔹 Projects
 
-### 1. PostgreSQL Exploitation & Post-Exploitation
+### 1. System Hacking – Gaining Access to a Vulnerable Machine
+- Objective: Exploit a vulnerable PostgreSQL service on Metasploitable2  
 - Tools: Nmap, Metasploit  
-- Steps: Scanning → Exploitation → Shell Access → Privilege Escalation → Cover Tracks  
-- [Project Folder](./PostgreSQL-Exploitation)
+- Key Steps: Scanning → Exploitation → Post-Exploitation → Privilege Escalation → Cover Tracks  
+- [Project Details](./01-System-Hacking)
 
-### 2. Password Cracking on FTP
+---
+
+### 2. Password Cracking on Open Source System
+- Objective: Crack weak FTP credentials and recover plaintext passwords  
 - Tools: Hydra, John the Ripper  
-- Steps: Brute force weak credentials → Extract & crack password hashes  
-- [Project Folder](./Password-Cracking)
-
-### 3. [Next Project Title]
-- Coming soon 🚀  
+- Key Steps: Brute force attack → Password extraction → Hash cracking  
+- [Project Details](./02-Password-Cracking)
 
 ---
 
 ## 🔹 About Me
-I’m passionate about cybersecurity, with a focus on ethical hacking, SOC analysis, and system defense.  
-This repo documents my learning journey as I build skills to become a Security Operations Center Analyst and, eventually, a Director of Cybersecurity.  
-
+I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, and system defense. 
 Connect with me on [LinkedIn](www.linkedin.com/in/matthew-chukwuorji)
