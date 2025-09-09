@@ -30,5 +30,5 @@ Perform ethical exploitation to gain shell access on a vulnerable machine.
    - Enforce least privilege access
 
 ## Screenshots
-!{Port Scanner}(./screenshots/scan_report.png)
+!{Port Scanner}(screenshots/scan_report.png)
 
