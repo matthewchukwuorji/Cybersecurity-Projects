@@ -20,7 +20,13 @@ This repository contains hands-on ethical hacking and cybersecurity projects I�
 - Key Steps: Brute force attack → Password extraction → Hash cracking  
 - [Project Details](./02-Password-Cracking)
 
----
+--- 
+
+### 3. Website Hacking – Accessing Admin Panel
+- **Objective:** Exploit DVWA vulnerabilities (SQL Injection & Command Injection)  
+- **Tools:** DVWA, John the Ripper, Kali Linux  
+- **Key Steps:** SQL Injection → Extract credentials → Hash cracking → Command Injection → Admin access  
+- [Project Details](./03-Website-Hacking/README.md)
 
 ## 🔹 About Me
 I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, and system defense. 
