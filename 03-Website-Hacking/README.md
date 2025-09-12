@@ -55,7 +55,7 @@ echo "5f4dcc3b5aa765d61d8327deb882cf99" > hashes.txt
 sudo john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-md5 hashes.txt
 sudo john --show --format=raw-md5 hashes.txt
 Result: cracked passwords saved
-   1. Screenshot: 'screenshots/password.png
+   1. Screenshot: 'screenshots/password.png'
 
 ### D. Command Injection Payloads
 1. 127.0.0.1 && uname -a- show OS info
@@ -69,43 +69,56 @@ Result: cracked passwords saved
 4. Overall risk: High for a production system
 
 ## 6. Impact
-1. Full disclosure of user credentials (including admin).
+
+1.Full disclosure of user credentials (including admin).
+
 2. Unauthorized administrative access to web app (dashboard).
-3. Potential data exfiltration, account takeover, and further lateral movement if host is not isolated.
-4. Remote command execution as web user — may lead to privilege escalation depending on host configuration.
-5. Business Impact:* *Severe* — potential data breach, regulatory fines, reputational damage, and financial loss if in production.
-6. Availability:* *Medium* — attacker could delete data, deface pages, or cause service disruption.
-7. Integrity:* *High* — attacker can modify or delete data, create or edit accounts, change app settings.
-8. Confidentiality:* *High* — attacker can view protected/admin-only data. 
+
+3. Data exfiltration, account takeover, and lateral movement potential.
+
+4. Remote command execution as web user — may enable privilege escalation.
+
+5. Business impact: Severe (data breach, regulatory risk, reputational/financial loss).
+
+6. Availability: Medium (attacker could deface or disrupt services).
+
+7. Integrity: High (attacker can modify or delete data).
+
+8. Confidentiality: High (attacker can access admin-only data).
 
 ## 7. Mitigation & Recommendations
 
 ### Immediate
 
-Harden deployment (remove test pages), keep DVWA off public networks, and enforce rate-limiting/account lockout.
+1. Harden deployment (remove test pages), keep DVWA off public networks, and enforce rate-limiting/account lockout.
 
-Replace MD5-stored passwords and force resets if this were production.
+2. Replace MD5-stored passwords and force resets if this were production.
 
 ### Developer / code changes
 
-Use parameterized queries / prepared statements (no string concatenation).
+1. Use parameterized queries / prepared statements (no string concatenation).
 
-Never pass raw user input to shell commands; use safe libraries/APIs and strict whitelists (e.g., IPv4 regex).
+2. Never pass raw user input to shell commands; use safe libraries/APIs and strict whitelists (e.g., IPv4 regex).
 
-Migrate password storage to bcrypt/Argon2 with per-user salts and proper cost factor.
+3. Migrate password storage to bcrypt/Argon2 with per-user salts and proper cost factor.
 
-Ensure DB accounts are least-privilege.
+4. Ensure DB accounts are least-privilege.
 
 ### Operational
 
-Deploy a WAF to detect/block SQLi/command injection patterns.
+1. Deploy a WAF to detect/block SQLi/command injection patterns.
 
-Enable logging, monitoring, and alerting for suspicious activity.
+2. Enable logging, monitoring, and alerting for suspicious activity.
 
-Schedule SAST/DAST scans and developer secure-coding training
+3. Schedule SAST/DAST scans and developer secure-coding training 
 
+## 8. Ethics & Notes
 
+All testing and evidence were produced on a local DVWA instance under my control. Do not run these tests against systems you do not own or have explicit written permission to test.
 
+## Screenshots
+
+'[Photo of John the Ripper](screenshots/password.png)
 
 
 
