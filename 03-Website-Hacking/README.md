@@ -118,7 +118,7 @@ All testing and evidence were produced on a local DVWA instance under my control
 
 ## Screenshots
 
-![Photo of John the Ripper](screenshots/password.png)
+![Photo of John the Ripper](./Screenshots/password.png)
 
 
 
