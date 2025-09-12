@@ -51,7 +51,7 @@ Demonstrate exploitation techniques (SQL Injection and Command Injection) on a c
    '''bash
 echo "5f4dcc3b5aa765d61d8327deb882cf99" > hashes.txt
 
-# crack with John (MD5)
+### crack with John (MD5)
 sudo john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-md5 hashes.txt
 sudo john --show --format=raw-md5 hashes.txt
 Result: cracked passwords saved
