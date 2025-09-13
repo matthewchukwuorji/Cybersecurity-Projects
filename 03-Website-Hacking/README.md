@@ -39,16 +39,16 @@ Demonstrate exploitation techniques (SQL Injection and Command Injection) on a c
 1. DVWA → **SQL Injection** lab.  
 2. Input: 1' OR '1'='1
 3. Result: Multiple rows returned confirming SQL injection.
-   1. Screenshot: 'screenshots/SQL_Injection.png'
+  
 
    ### B. Extract credentials via UNION
 1. SQLi lab input: ' UNION SELECT user, password FROM users#
 2. Result: Returned rows containing `user` and `password` (hashes or plaintext). Saved the hash to `hashes.txt`.
-   1. Screenshot: 'screenshots/sql.png'
+  
 
 ### C. Crack MD5 hashes
-1. save the hash
-echo "5f4dcc3b5aa765d61d8327deb882cf99" > hashes.txt
+1. save the hash 
+- echo "5f4dcc3b5aa765d61d8327deb882cf99" > hashes.txt
 
 ### crack with John (MD5)
 1. sudo john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-md5 hashes.txt
@@ -117,6 +117,11 @@ All testing and evidence were produced on a local DVWA instance under my control
 ## Screenshots
 
 ![Photo of John the Ripper](Screenshots/john.png)
+![photot of webroot](Screenshots/webroot.png)
+![photo of uname](Screenshots/uname.png)
+![photo sql](Screenshots/sql.png)
+![photo of SQL](Screenshots/SQL_Injection.png)
+![photo if id](Screenshots/id.png)
 
 
 
