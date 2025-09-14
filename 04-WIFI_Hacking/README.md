@@ -48,4 +48,13 @@ crunch 8 10 ?u?l?l?l?d?d | aircrack-ng -w - -b <AP_BSSID> handshake-01.cap
 - Replace <AP_BSSID> with the target BSSID (AP MAC).
 - Replace Crunch pattern with the pattern that fits the expected password.
 
+## Mitigation Recommendations
+- Upgrade to WPA3 where supported.
+- Use long, random passphrases (≥12–16 chars).
+= Use WPA2/WPA3-Enterprise (802.1X) for sensitive environments.
+= Change default admin credentials and disable remote management.
+- Disable legacy protocols (WEP/TKIP).
+- Keep router firmware up to date and enable logging/alerts.
+- MAC filtering/hidden SSID provide minor obscurity — not a primary defense.
+
 
