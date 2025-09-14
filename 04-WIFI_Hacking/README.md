@@ -57,4 +57,19 @@ crunch 8 10 ?u?l?l?l?d?d | aircrack-ng -w - -b <AP_BSSID> handshake-01.cap
 - Keep router firmware up to date and enable logging/alerts.
 - MAC filtering/hidden SSID provide minor obscurity — not a primary defense.
 
+## Safety & Ethics
+- Tests performed only on owned equipment or isolated lab AP.
+- Always obtain written permission before testing third-party networks.
+- Do not publish capture files or recovered credentials. Use a private branch or private repo for instructor-only artifacts.
+
+## References
+- Airgeddon project
+- Aircrack-ng documentation
+- Crunch documentation
+
+## Screenshots
+![photo of captured handshake](Screenshots/handshake.png)
+![photo of aircrack](Screenshots/aircrack.png)
+
+
 
