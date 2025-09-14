@@ -28,6 +28,12 @@ This repository contains hands-on ethical hacking and cybersecurity projects I�
 - **Key Steps:** SQL Injection → Extract credentials → Hash cracking → Command Injection → Admin access  
 - [Project Details](./03-Website-Hacking/README.md)
 
+### 4. WIFI_Hacking
+- **Objective:** Capture WPA2 handshake and recover WiFi password using ethical tools.
+- **Tools:** Kali, Linux, Airgeddon, Crunch, Aircrack-ng
+- [Project Details](./04-WIFI-Hacking/README.md)
+
+
 ## 🔹 About Me
 I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, and system defense. 
 Connect with me on [LinkedIn]()www.linkedin.com/in/matthew-chukwuorji)
