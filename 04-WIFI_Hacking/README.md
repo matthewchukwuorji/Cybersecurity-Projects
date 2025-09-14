@@ -32,4 +32,8 @@ This repository documents **ethical, lab-only** testing. Do **not** use these te
 ### 1) Start Airgeddon and prepare capture
 1. Launch Airgeddon:
 ```bash
-- sudo airgeddon 
+- sudo airgeddon
+2. In Airgeddon:
+
+
+
