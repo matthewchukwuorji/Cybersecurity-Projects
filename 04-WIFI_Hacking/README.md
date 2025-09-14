@@ -68,7 +68,7 @@ crunch 8 10 ?u?l?l?l?d?d | aircrack-ng -w - -b <AP_BSSID> handshake-01.cap
 - Crunch documentation
 
 ## Screenshots
-![photo of captured handshake](Screenshots/handshake.png)
+![photo of captured handshake](Screenshots/hanshake.png)
 ![photo of aircrack](Screenshots/aircrack.png)
 
 
