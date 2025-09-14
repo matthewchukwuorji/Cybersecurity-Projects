@@ -33,5 +33,11 @@ This repository documents **ethical, lab-only** testing. Do **not** use these te
 1. Launch Airgeddon:
   - 'sudo airgeddon'
 
+2. Select your Atheros interface.
+- Let Airgeddon put the adapter into monitor mode.
+- Scan and select the lab/AP (owned AP).
+- Start capturing and wait until Airgeddon shows Handshake captured for <SSID>
+- Saved capture file
 
+3. Use Airgeddon’s deauth option to force a client re-auth for handshake capture.
 
