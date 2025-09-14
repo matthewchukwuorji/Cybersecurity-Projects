@@ -31,7 +31,7 @@ This repository contains hands-on ethical hacking and cybersecurity projects Iâ€
 ### 4. WIFI_Hacking
 - **Objective:** Capture WPA2 handshake and recover WiFi password using ethical tools.
 - **Tools:** Kali, Linux, Airgeddon, Crunch, Aircrack-ng
-- [Project Details](./04-WIFI-Hacking/README.md)
+- [Project Details](./04-WIFI_Hacking/README.md)
 
 
 ## ðŸ”¹ About Me
