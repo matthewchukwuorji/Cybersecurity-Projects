@@ -43,7 +43,7 @@ This repository documents **ethical, lab-only** testing. Do **not** use these te
 
 ### 2) Crack the capture — Crunch piped to Aircrack-ng (one-liner)
 I generated a targeted wordlist with Crunch and piped it directly to Aircrack-ng:
-# Example: generate 8–10 char wordlist, pattern: 1 upper, 3 lower, 2 digits
+### Example: generate 8–10 char wordlist, pattern: 1 upper, 3 lower, 2 digits
 crunch 8 10 ?u?l?l?l?d?d | aircrack-ng -w - -b <AP_BSSID> handshake-01.cap
 - Replace <AP_BSSID> with the target BSSID (AP MAC).
 - Replace Crunch pattern with the pattern that fits the expected password.
