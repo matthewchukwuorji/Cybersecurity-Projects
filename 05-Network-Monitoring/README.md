@@ -67,13 +67,13 @@ sudo wireshark
 ---
 
 ## Mitigations & recommendations 
--Network segmentation / VLANs — reduce broadcast domain and isolate vulnerable hosts.
--switch hardening — enable port security (sticky MACs), limit max MACs per port.
--Dynamic ARP Inspection (DAI) and DHCP snooping on managed switches.
--Static ARP entries for critical servers where feasible.
--Rate limiting on the edge (pfSense rules) for ICMP and TCP SYN.
--Deploy IDS / monitoring (Zeek for logs; Suricata/Snort for alerts) and tune rules to baseline.
--Operational hygiene — patch vulnerable hosts, restrict admin access, enable MFA, maintain logs and pcap retention policy for incident analysis.
+- Network segmentation / VLANs — reduce broadcast domain and isolate vulnerable hosts.
+- switch hardening — enable port security (sticky MACs), limit max MACs per port.
+- Dynamic ARP Inspection (DAI) and DHCP snooping on managed switches.
+- Static ARP entries for critical servers where feasible.
+- Rate limiting on the edge (pfSense rules) for ICMP and TCP SYN.
+- Deploy IDS / monitoring (Zeek for logs; Suricata/Snort for alerts) and tune rules to baseline.
+- Operational hygiene — patch vulnerable hosts, restrict admin access, enable MFA, maintain logs and pcap retention policy for incident analysis.
 
 ## Screenshots
 ![portscan](Screenshots/portscan.png)
