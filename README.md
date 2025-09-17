@@ -33,6 +33,12 @@ This repository contains hands-on ethical hacking and cybersecurity projects I�
 - **Tools:** Kali, Linux, Airgeddon, Crunch, Aircrack-ng
 - [Project Details](./04-WIFI_Hacking/README.md)
 
+### 5. Network Attack and Monitoring
+- **Objestives:** Monitor and detect network-based attacks using traffic analyzers.
+- **Tools:** Wireshark, Nmap, Kali, Pfsense, parrot Security.
+- **Key Steps:** Port Scan → DoS, ARP Spoofing → Capture and analyze traffic
+- [Project Detals](./05-Network-Monitoring/README.md)
+
 
 ## 🔹 About Me
 I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, and system defense. 
