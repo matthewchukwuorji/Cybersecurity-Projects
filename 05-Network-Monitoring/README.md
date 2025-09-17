@@ -76,6 +76,6 @@ sudo wireshark
 - Operational hygiene — patch vulnerable hosts, restrict admin access, enable MFA, maintain logs and pcap retention policy for incident analysis.
 
 ## Screenshots
-![portscan](Screenshots/portscan.png)
-![icmp](Screenshots/ICMP.png)
-![arp](Screenshots/arp.png)
+![screenshot of portscan](Screenshots/portscan.png)
+![screenshot of icmp](Screenshots/ICMP.png)
+![screenshot of arp](Screenshots/arp.png)
