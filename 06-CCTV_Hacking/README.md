@@ -52,10 +52,10 @@
 
 - nano simulated_cctv.py
   
-### !/usr/bin/env python3
-### simulated_cctv.py
-### Simple Flask app that simulates a CCTV MJPEG stream and a login page.
-### Default credentials: admin / admin
+#!/usr/bin/env python3
+# simulated_cctv.py
+# Simple Flask app that simulates a CCTV MJPEG stream and a login page.
+# Default credentials: admin / admin
 
 from flask import Flask, Response, render_template_string, request, redirect, url_for
 import cv2
@@ -74,11 +74,20 @@ FRAME_H = 480
 FPS = 10
 
 def generate_frames():
+    """Generate black frames with a timestamp for simulated CCTV."""
     while True:
         frame = np.zeros((FRAME_H, FRAME_W, 3), dtype=np.uint8)
         ts = time.strftime("%Y-%m-%d %H:%M:%S")
-        cv2.putText(frame, f"Simulated CCTV  {ts}", (10, 30),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2, cv2.LINE_AA)
+        cv2.putText(
+            frame,
+            f"Simulated CCTV  {ts}",
+            (10, 30),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.7,
+            (0, 255, 0),
+            2,
+            cv2.LINE_AA
+        )
         ret, buf = cv2.imencode('.jpg', frame)
         if not ret:
             continue
@@ -87,6 +96,7 @@ def generate_frames():
                b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
         time.sleep(1.0 / FPS)
 
+# Login page HTML template
 LOGIN_PAGE = """
 <!doctype html>
 <html>
@@ -103,6 +113,7 @@ LOGIN_PAGE = """
 </html>
 """
 
+# Stream page HTML template
 STREAM_PAGE = """
 <!doctype html>
 <html>
@@ -116,6 +127,7 @@ STREAM_PAGE = """
 
 @app.route('/', methods=['GET', 'POST'])
 def login():
+    """Handle login page and authentication."""
     message = ""
     if request.method == "POST":
         u = request.form.get("username", "")
@@ -128,16 +140,20 @@ def login():
 
 @app.route('/live')
 def live():
+    """Serve the live stream page (after login)."""
     return render_template_string(STREAM_PAGE)
 
 @app.route('/stream')
 def stream():
-    return Response(generate_frames(),
-                    mimetype='multipart/x-mixed-replace; boundary=frame')
+    """Serve the MJPEG stream to the browser."""
+    return Response(
+        generate_frames(),
+        mimetype='multipart/x-mixed-replace; boundary=frame'
+    )
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)
-PY
+
 
 
 ## 5) Flask simulated CCTV server (the server I ran)
