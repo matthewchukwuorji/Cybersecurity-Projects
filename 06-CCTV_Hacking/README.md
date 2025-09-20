@@ -257,3 +257,9 @@ I also verified visually in browser that admin/admin logged me into the live pag
 All actions above were performed on a simulated CCTV instance I controlled. Do not use these techniques on systems you do not own or are not explicitly authorized to test.
 
 ## Screenshots
+![photo of whatweb](Screenshots/whatweb.png)
+![photo of nmap](Screenshots/nmap_cctv.png)
+![photo of default](Screenshots/default.png)
+![photo of cctvfootage](Screenshots/cctvffotage.jpg)
+![photo of portal](Screenshots/cctvportal.png)
+![photo of cctv](Screenshots/cctv.png)
