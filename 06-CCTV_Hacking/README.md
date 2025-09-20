@@ -5,7 +5,7 @@ The objective of this project is to **ethically access a simulated or open-sourc
 
 ---
 
-## 1. Environment Setup
+## Environment Setup
 
 **Requirements:**
 - Kali Linux VM (or Debian-based system)
@@ -14,8 +14,21 @@ The objective of this project is to **ethically access a simulated or open-sourc
 - Flask
 - Network tools: `nmap`, `curl`, `whatweb`, `gobuster`
 
-**Step 1: Install prerequisites**
-`'' bash
-- sudo apt update && sudo apt install -y python3 python3-pip cmake g++ wget unzip git nmap curl gobuster
+---
+
+## 1 — Prepare your VM (Kali / Debian / Ubuntu)
+
+Open a terminal and run:
+
+sudo apt update
+sudo apt upgrade -y
+# Install common tools
+sudo apt install -y python3 python3-venv python3-pip git build-essential cmake \
+                   wget unzip nmap curl gobuster ffmpeg v4l-utils
+
+
+
+
+
 
 
