@@ -22,10 +22,10 @@
 ## 2) Building / installing OpenCV (I built OpenCV from source)
 
 **Commands I used (I built from source, then later used pip wheels as needed):**
-## (download)
+### (download)
 wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip
 unzip opencv.zip
-## build (from inside a build directory)
+### build (from inside a build directory)
 mkdir -p build && cd build
 cmake ../opencv-4.x
 cmake --build .
@@ -40,20 +40,20 @@ cd ~/simcctv_lab
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
-## used headless opencv to avoid GUI problems inside VM
+### used headless opencv to avoid GUI problems inside VM
 pip install flask numpy opencv-python-headless
 pip install opencv-python
 
 ---
 
-## 5) I created this pyhton script in simulated_cctv.py
+## 4) I created this pyhton script in simulated_cctv.py
 
 nano simulated_cctv.py
-#!/usr/bin/env python3
-# simulated_cctv.py
-# Simple Flask app that simulates a CCTV MJPEG stream and a login page.
-# Default credentials: admin / admin
-
+###!/usr/bin/env python3
+### simulated_cctv.py
+### Simple Flask app that simulates a CCTV MJPEG stream and a login page.
+### Default credentials: admin / admin
+'''bash
 from flask import Flask, Response, render_template_string, request, redirect, url_for
 import cv2
 import numpy as np
