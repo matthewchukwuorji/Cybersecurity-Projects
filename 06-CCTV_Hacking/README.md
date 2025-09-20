@@ -15,7 +15,7 @@ The objective of this project is to **ethically access a simulated or open-sourc
 - Network tools: `nmap`, `curl`, `whatweb`, `gobuster`
 
 **Step 1: Install prerequisites**
-`''bash
+`'' bash
 - sudo apt update && sudo apt install -y python3 python3-pip cmake g++ wget unzip git nmap curl gobuster
 
 
