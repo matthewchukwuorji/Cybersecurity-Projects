@@ -39,6 +39,11 @@ This repository contains hands-on ethical hacking and cybersecurity projects I�
 - **Key Steps:** Port Scan → DoS, ARP Spoofing → Capture and analyze traffic
 - [Project Detals](./05-Network-Monitoring/README.md)
 
+### 6. CCTV Hacking
+- **Objective** Access a simulated or open-source CCTV system ethically.
+- **Tools** Kali, OpenCV, Nmap.
+- **Key Steps** Port Scan → default credentials → web-based access points.
+- [Project Detals](./06-CCTV-Hacking/README.md)
 
 ## 🔹 About Me
 I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, and system defense. 
