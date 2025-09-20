@@ -43,7 +43,7 @@ This repository contains hands-on ethical hacking and cybersecurity projects I�
 - **Objective** Access a simulated or open-source CCTV system ethically.
 - **Tools** Kali, OpenCV, Nmap.
 - **Key Steps** Port Scan → default credentials → web-based access points.
-- [Project Detals](./06-CCTV-Hacking/README.md)
+- [Project Detals](./06-CCTV_Hacking/README.md)
 
 ## 🔹 About Me
 I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, and system defense. 
