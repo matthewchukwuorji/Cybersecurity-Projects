@@ -25,7 +25,8 @@
  **(download)**
 - wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip
 - unzip opencv.zip
- **build (from inside a build directory)**
+
+**build (from inside a build directory)**
 - mkdir -p build && cd build
 - cmake ../opencv-4.x
 - cmake --build .
@@ -40,6 +41,7 @@
 - python3 -m venv .venv
 - source .venv/bin/activate
 - pip install --upgrade pip
+
 **used headless opencv to avoid GUI problems inside VM**
 - pip install flask numpy opencv-python-headless
 - pip install opencv-python
@@ -140,8 +142,10 @@ PY
 
 ## 5) Flask simulated CCTV server (the server I ran)
 
-**I created and ran this file simulated_cctv.py (this is the server I used — it serves /, /live, /stream and uses default admin/admin credentials). I started it with:**
-python3 simulated_cctv.py
+**I created and ran this file simulated_cctv.py (this is the server I used — it serves /, /live, /stream and uses default admin/admin credentials).** 
+**I started it with:**
+ * python3 simulated_cctv.py
+
 **Observed terminal output:**
  * Serving Flask app 'simulated_cctv'
  * Running on all addresses (0.0.0.0)
@@ -234,9 +238,9 @@ I also verified visually in browser that admin/admin logged me into the live pag
 ## 11) Final outcome (what I accomplished)
 
 - Started and ran a simulated CCTV server (Flask) on port 5000.
--Scanned and found the open port: 5000/tcp open http.
--Tested and confirmed default creds (admin/admin) — login successful and redirected to /live.
--Enumerated web endpoints and confirmed /stream is an MJPEG feed.
+- Scanned and found the open port: 5000/tcp open http.
+- Tested and confirmed default creds (admin/admin) — login successful and redirected to /live.
+-  Enumerated web endpoints and confirmed /stream is an MJPEG feed.
 -Captured a sample frame from the stream with ffmpeg.
 
 ## 12) Mitigation recommendations (what I documented)
