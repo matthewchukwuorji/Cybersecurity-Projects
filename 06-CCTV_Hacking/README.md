@@ -260,6 +260,6 @@ All actions above were performed on a simulated CCTV instance I controlled. Do n
 ![photo of whatweb](Screenshots/whatweb.png)
 ![photo of nmap](Screenshots/nmap_cctv.png)
 ![photo of default](Screenshots/default.png)
-![photo of cctvfootage](Screenshots/cctvffotage.png)
+![photo of cctvfootage](Screenshots/cctvfootage.png)
 ![photo of portal](Screenshots/cctvportal.png)
 ![photo of cctv](Screenshots/cctv.png)
