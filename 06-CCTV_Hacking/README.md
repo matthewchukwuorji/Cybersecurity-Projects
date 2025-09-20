@@ -22,38 +22,39 @@
 ## 2) Building / installing OpenCV (I built OpenCV from source)
 
 **Commands I used (I built from source, then later used pip wheels as needed):**
-### (download)
-wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip
-unzip opencv.zip
-### build (from inside a build directory)
-mkdir -p build && cd build
-cmake ../opencv-4.x
-cmake --build .
+ **(download)**
+- wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip
+- unzip opencv.zip
+ **build (from inside a build directory)**
+- mkdir -p build && cd build
+- cmake ../opencv-4.x
+- cmake --build .
 
 ---
 
 ## 3) Python virtual environment & dependencies
 
 **Commands:**
-mkdir -p ~/simcctv_lab
-cd ~/simcctv_lab
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-### used headless opencv to avoid GUI problems inside VM
-pip install flask numpy opencv-python-headless
-pip install opencv-python
+- mkdir -p ~/simcctv_lab
+- cd ~/simcctv_lab
+- python3 -m venv .venv
+- source .venv/bin/activate
+- pip install --upgrade pip
+**used headless opencv to avoid GUI problems inside VM**
+- pip install flask numpy opencv-python-headless
+- pip install opencv-python
 
 ---
 
 ## 4) I created this pyhton script in simulated_cctv.py
 
-nano simulated_cctv.py
-###!/usr/bin/env python3
+- nano simulated_cctv.py
+  
+### !/usr/bin/env python3
 ### simulated_cctv.py
 ### Simple Flask app that simulates a CCTV MJPEG stream and a login page.
 ### Default credentials: admin / admin
-'''bash
+
 from flask import Flask, Response, render_template_string, request, redirect, url_for
 import cv2
 import numpy as np
@@ -137,7 +138,7 @@ if __name__ == "__main__":
 PY
 
 
-## 4) Flask simulated CCTV server (the server I ran)
+## 5) Flask simulated CCTV server (the server I ran)
 
 **I created and ran this file simulated_cctv.py (this is the server I used — it serves /, /live, /stream and uses default admin/admin credentials). I started it with:**
 python3 simulated_cctv.py
@@ -150,7 +151,7 @@ I then opened the browser and confirmed I could reach the login page.
 
 ---
 
-## 5) HP Webcam attempt & troubleshooting (what I did)
+## 6) HP Webcam attempt & troubleshooting (what I did)
 
 **What I tried:**
 - I attempted to use the host HP integrated webcam via VirtualBox webcam passthrough.
@@ -169,68 +170,68 @@ Because passthrough remained flaky, I switched to the simulated Flask CCTV strea
 
 ---
 
-## 6) Confirming the Flask stream and endpoints (what I did)
+## 7) Confirming the Flask stream and endpoints (what I did)
 
 I verified the server endpoints existed and the stream worked.
 
 **Check listening and local access:**
-ps aux | grep simulated_cctv | grep -v grep
-sudo ss -ltnp | grep :5000
-curl -v http://127.0.0.1:5000/
-curl -v http://192.168.100.56:5000/
+- ps aux | grep simulated_cctv | grep -v grep
+- sudo ss -ltnp | grep :5000
+- curl -v http://127.0.0.1:5000/
+- curl -v http://192.168.100.56:5000/
 
 **The stream endpoint is:**
-http://192.168.100.56:5000/stream
-Content-Type: multipart/x-mixed-replace; boundary=frame   # MJPEG
+- http://192.168.100.56:5000/stream
+- Content-Type: multipart/x-mixed-replace; boundary=frame   # MJPEG
 
 ---
 
-## 7) Scanning for open ports (what I ran)
+## 8) Scanning for open ports (what I ran)
 
 **I ran nmap (full TCP scan) from inside the VM:**
-sudo nmap -sV -p- 192.168.100.56
+- sudo nmap -sV -p- 192.168.100.56
 
 **Result (what I observed):**
-5000/tcp open http → Flask server reachable on port 5000
+- 5000/tcp open http → Flask server reachable on port 5000
 
 ---
 
-## 8) Testing default credentials (exact command I ran)
+## 9) Testing default credentials (exact command I ran)
 
 **I performed a one-shot credential test (curl POST):**
-curl -i -X POST -d "username=admin&password=admin" http://192.168.100.56:5000/ -L | sed -n '1,40p'
+- curl -i -X POST -d "username=admin&password=admin" http://192.168.100.56:5000/ -L | sed -n '1,40p'
 
 **Observed output:**
-HTTP/1.1 302 FOUND
-Location: /live
+- HTTP/1.1 302 FOUND
+- Location: /live
 ...
 HTTP/1.1 405 METHOD NOT ALLOWED
 ...
-Interpretation: login succeeded (server redirected to /live), curl then followed the redirect and received 405 on a non-GET; but the important part is the 302 Location: /live — credentials worked.
+- Interpretation: login succeeded (server redirected to /live), curl then followed the redirect and received 405 on a non-GET; but the important part is the 302 - Location: /live — credentials worked.
 
 I also verified visually in browser that admin/admin logged me into the live page and I could see the timestamped black frame.
 
 ---
 
-## 9) Web-based access enumeration (what I ran)
+## 10) Web-based access enumeration (what I ran)
 
 **I enumerated web endpoints and fingerprinted the server:**
 
-Fingerprint with whatweb:
-whatweb http://192.168.100.56:5000/
-# expected output showed Flask / Werkzeug / Python server
+**Fingerprint with whatweb:**
+- whatweb http://192.168.100.56:5000/
+ expected output showed Flask / Werkzeug / Python server
 
 **Find endpoints with gobuster:**
-gobuster dir -u http://192.168.100.56:5000/ -w /usr/share/wordlists/dirb/common.txt -t 20
+- gobuster dir -u http://192.168.100.56:5000/ -w /usr/share/wordlists/dirb/common.txt -t 20
 
 **Peeked stream headers:**
-curl -I http://192.168.100.56:5000/stream
-# Expected: Content-Type: multipart/x-mixed-replace; boundary=frame
+- curl -I http://192.168.100.56:5000/stream
+ Expected: Content-Type: multipart/x-mixed-replace; boundary=frame
 - Endpoints found: / (login), /live (UI), /stream (MJPEG)
 
 ---
 
-## 10) Final outcome (what I accomplished)
+## 11) Final outcome (what I accomplished)
 
 - Started and ran a simulated CCTV server (Flask) on port 5000.
 -Scanned and found the open port: 5000/tcp open http.
@@ -238,7 +239,7 @@ curl -I http://192.168.100.56:5000/stream
 -Enumerated web endpoints and confirmed /stream is an MJPEG feed.
 -Captured a sample frame from the stream with ffmpeg.
 
-## 11) Mitigation recommendations (what I documented)
+## 12) Mitigation recommendations (what I documented)
 
 - Change default credentials immediately.
 - Use strong, unique passwords.
@@ -247,7 +248,7 @@ curl -I http://192.168.100.56:5000/stream
 - Serve web interfaces over HTTPS and use authentication tokens for streams.
 - Disable unused services and ports; enable logging and monitoring.
 
-## 12) Ethics note
+## 13) Ethics note
 
 All actions above were performed on a simulated CCTV instance I controlled. Do not use these techniques on systems you do not own or are not explicitly authorized to test.
 
