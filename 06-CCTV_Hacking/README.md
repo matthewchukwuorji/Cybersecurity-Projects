@@ -23,10 +23,10 @@ sudo apt install -y python3 python3-pip python3-venv cmake g++ wget unzip git \
 ## 2) Building / installing OpenCV (I built OpenCV from source)
 
 **Commands I used (I built from source, then later used pip wheels as needed):**
-# (download)
+## (download)
 wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip
 unzip opencv.zip
-# build (from inside a build directory)
+## build (from inside a build directory)
 mkdir -p build && cd build
 cmake ../opencv-4.x
 cmake --build .
@@ -41,7 +41,7 @@ cd ~/simcctv_lab
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
-# used headless opencv to avoid GUI problems inside VM
+## used headless opencv to avoid GUI problems inside VM
 pip install flask numpy opencv-python-headless
 pip install opencv-python
 
