@@ -16,6 +16,6 @@ The objective of this project is to **ethically access a simulated or open-sourc
 
 **Step 1: Install prerequisites**
 `''bash
-= sudo apt update && sudo apt install -y python3 python3-pip cmake g++ wget unzip git nmap curl gobuster
+- sudo apt update && sudo apt install -y python3 python3-pip cmake g++ wget unzip git nmap curl gobuster
 
 
