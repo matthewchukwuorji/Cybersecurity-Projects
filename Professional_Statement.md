@@ -25,4 +25,4 @@ As a cybersecurity analyst, my ultimate goal is to contribute to a safer digital
 ## **Core Statement**
 Driven by my problem-solving abilities and dedication to privacy and data confidentiality, I am committed to leveraging my skills and knowledge in cybersecurity to create a secure digital landscape and safeguard sensitive information.  
 
-My strengths **problem solving** and **collaboration** combined with my values of **individual privacy** and **data confidentiality**, empower me to deliver ethical, effective, and comprehensive security solutions that align with organizational and industry standards.
+My strengths, **problem solving** and **collaboration** combined with my values of **individual privacy** and **data confidentiality**, empower me to deliver ethical, effective, and comprehensive security solutions that align with organizational and industry standards.
