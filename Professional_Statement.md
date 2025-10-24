@@ -1,12 +1,12 @@
 # **Professional Statement**
 
-In the field of cybersecurity, my passion lies in safeguarding digital landscapes and protecting sensitive information from ever-evolving threats. I am driven by the constant challenge of staying one step ahead, and I find fulfillment in ensuring individuals' privacy and organizations' data security.  
+In the field of cybersecurity, my passion lies in safeguarding digital landscapes and protecting sensitive information from ever evolving threats. I am driven by the constant challenge of staying one step ahead, and I find fulfillment in ensuring individuals' privacy and organizations' data security.  
 
-What interests me most about a career in cybersecurity is its dynamic nature — the continuous need for adaptation, learning, and innovation. This field allows me to constantly expand my technical knowledge while making a meaningful impact by securing critical systems and mitigating risks.  
+What interests me most about a career in cybersecurity is its dynamic nature the continuous need for adaptation, learning, and innovation. This field allows me to constantly expand my technical knowledge while making a meaningful impact by securing critical systems and mitigating risks.  
 
-I aspire to deepen my expertise in **advanced threat intelligence**, **cloud security**, and **Internet of Things (IoT) security**. Mastering these areas will enable me to tackle complex security challenges and deliver comprehensive solutions that protect digital assets effectively.  
+I aspire to deepen my expertise as a Security Operations Center (SOC) Analyst, focusing on advanced threat intelligence, cloud security, and Internet of Things (IoT) security. Strengthening my skills in incident detection, threat analysis, and response operations will enable me to deliver effective defense and rapid mitigation against evolving cyber threats.
 
-As a cybersecurity analyst, my ultimate goal is to contribute to a safer digital environment by proactively identifying and mitigating threats. I aim to help organizations maintain the **confidentiality, integrity, and availability (CIA)** of their data — fostering trust among stakeholders and ensuring compliance with industry standards and regulations.
+As a cybersecurity analyst, my ultimate goal is to contribute to a safer digital environment by proactively identifying and mitigating threats. I aim to help organizations maintain the **confidentiality, integrity, and availability (CIA)** of their data, fostering trust among stakeholders and ensuring compliance with industry standards and regulations.
 
 ---
 
