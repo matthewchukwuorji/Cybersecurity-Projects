@@ -11,7 +11,7 @@ As a cybersecurity analyst, my ultimate goal is to contribute to a safer digital
 ---
 
 ## **Strengths**
-1. **Problem-Solving:** My analytical mindset and critical thinking skills enable me to navigate complex security issues, identify vulnerabilities, and develop effective strategies for remediation.  
+1. **Problem Solving:** My analytical mindset and critical thinking skills enable me to navigate complex security issues, identify vulnerabilities, and develop effective strategies for remediation.  
 2. **Collaboration:** I thrive in collaborative environments, leveraging teamwork and clear communication to share knowledge, align goals, and strengthen overall cybersecurity measures.  
 
 ---
@@ -25,4 +25,4 @@ As a cybersecurity analyst, my ultimate goal is to contribute to a safer digital
 ## **Core Statement**
 Driven by my problem-solving abilities and dedication to privacy and data confidentiality, I am committed to leveraging my skills and knowledge in cybersecurity to create a secure digital landscape and safeguard sensitive information.  
 
-My strengths — **problem-solving** and **collaboration** — combined with my values of **individual privacy** and **data confidentiality**, empower me to deliver ethical, effective, and comprehensive security solutions that align with organizational and industry standards.
+My strengths **problem solving** and **collaboration** combined with my values of **individual privacy** and **data confidentiality**, empower me to deliver ethical, effective, and comprehensive security solutions that align with organizational and industry standards.
