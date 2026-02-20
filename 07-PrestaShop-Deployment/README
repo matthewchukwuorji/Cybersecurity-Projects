@@ -1,0 +1,159 @@
+#  PrestaShop Deployment on AWS (EC2 + RDS)
+
+## Live Application
+*Public URL:*  
+http://54.227.119.61
+
+---
+
+## Project Overview
+
+This project demonstrates the deployment of an open-source e-commerce platform (PrestaShop) on AWS using a secure architecture.
+The web application is hosted on *Amazon EC2, while the database is hosted separately on **Amazon RDS (MySQL)*. The deployment was completed using AWS Free Tier resources.
+
+---
+
+## Architecture Design
+
+```
+User
+  ↓
+Elastic IP
+  ↓
+EC2 (Ubuntu + Apache + PHP + PrestaShop)
+  ↓
+Amazon RDS (MySQL Database)
+```
+
+### Architecture Summary
+
+- EC2 hosts the web application.
+- RDS hosts the database.
+- The database is not publicly accessible.
+- Security Groups control access between services.
+
+---
+
+## AWS Services Used
+
+- Amazon EC2 (Ubuntu 22.04 – t3.micro)
+- Amazon RDS (MySQL – db.t4g.micro)
+- VPC
+- Security Groups
+- Elastic IP
+- Apache2
+- PHP 8.x
+
+---
+
+## Implementation Steps
+
+### 1 Launch EC2 Instance
+
+- Selected Ubuntu 22.04 LTS
+- Instance type: t3.micro (Free Tier)
+- Configured Security Group:
+  - SSH (22) → My IP only
+  - HTTP (80) → 0.0.0.0/0
+  - HTTPS (443) → 0.0.0.0/0
+
+---
+
+### 2 Install Apache & PHP
+
+```bash
+sudo apt update
+sudo apt install apache2 php php-mysql php-gd php-xml php-mbstring unzip -y php-intl
+sudo a2enmod rewrite
+sudo systemctl restart apache2
+```
+
+Updated Apache configuration to allow .htaccess.
+
+---
+
+### 3 Create RDS Database
+
+- Engine: MySQL
+- Instance type: db.t4g.micro (Free Tier)
+- Public access: *No*
+- Created database name and credentials
+
+---
+
+### 4 Configure Security Groups
+
+*EC2 Security Group*
+- SSH (22) – My IP
+- HTTP (80) – Public access
+- MySQL (3306) - EC2 Security Group
+
+*RDS Security Group*
+- MySQL (3306) – Source: EC2 Security Group only
+
+This ensures the database can only be accessed from the EC2 instance.
+
+---
+
+### 5 Upload & Install PrestaShop
+
+- Downloaded official production release package
+- Uploaded to EC2 via SCP
+- Extracted files into `/var/www/html`
+- Set proper permissions:
+
+```bash
+sudo chown -R www-data:www-data /var/www/html
+sudo chmod -R 755 /var/www/html
+```
+
+- Accessed installer via browser
+- Connected to RDS using database endpoint
+- Completed installation successfully
+
+---
+
+### 6 Attach Elastic IP
+
+- Allocated Elastic IP
+- Associated it with EC2 instance
+- Verified application loads successfully
+
+---
+
+## Security Measures Implemented
+
+- Database hosted on separate RDS instance
+- RDS not publicly accessible
+- MySQL port restricted to EC2 security group only
+- SSH restricted to specific IP
+- `/install` directory removed after installation
+
+---
+
+## Challenges Encountered
+
+- Missing PHP extensions during installation
+- Apache rewrite configuration issues
+- Incorrect PrestaShop package downloaded initially
+- 404 error after attaching Elastic IP
+
+All issues were resolved through proper troubleshooting and configuration updates.
+
+---
+
+## Screenshots
+
+```
+![EC2 Instance](screenshots/ec2.png)
+![RDS Configuration](screenshots/rds.png)
+![PrestaShop Dashboard](screenshots/dashboard.png)
+
+---
+
+## Conclusion
+
+The PrestaShop application was successfully deployed using AWS Free Tier services with a secure 3-tier architecture separating the application and database layers. This project demonstrates hands-on experience with AWS infrastructure, Linux server configuration, and web application deployment.
+
+
+
