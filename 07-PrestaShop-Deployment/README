@@ -63,7 +63,7 @@ Amazon RDS (MySQL Database)
 
 ```bash
 sudo apt update
-sudo apt install apache2 php php-mysql php-gd php-xml php-mbstring unzip -y php-intl
+sudo apt install apache2 php php-mysql php-gd php-xml php-mbstring unzip php-intl -y
 sudo a2enmod rewrite
 sudo systemctl restart apache2
 ```
