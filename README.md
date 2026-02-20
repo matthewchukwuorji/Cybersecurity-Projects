@@ -45,8 +45,12 @@ This repository contains hands-on ethical hacking and cybersecurity projects I�
 - **Key Steps** Port Scan → default credentials → web-based access points.
 - [Project Detals](./06-CCTV_Hacking/README.md)
 
+### 7. Pretashop AWS Demo
+- **Objective** To install and host a PrestaShop e-commerce application on a cloud server with a separate database using AWS.
+- [Project Details](07-PrestaShop-Deployment/README.md)
+
 ## 🔹 About Me
-I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, and system defense. 
+I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, Cloud computing and system defense. 
 Connect with me on [LinkedIn]()www.linkedin.com/in/matthew-chukwuorji)
 
 
