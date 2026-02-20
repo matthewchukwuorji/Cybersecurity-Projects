@@ -145,9 +145,9 @@ All issues were resolved through proper troubleshooting and configuration update
 ## Screenshots
 
 ```
-![EC2 Instance](screenshots/ec2.png)
-![RDS Configuration](screenshots/rds.png)
-![PrestaShop Dashboard](screenshots/dashboard.png)
+![EC2 Instance](Screenshots/Instance.png)
+![RDS Configuration](Screenshots/RDS.png)
+![PrestaShop Dashboard](Screenshots/Dashboard.png)
 
 ---
 
