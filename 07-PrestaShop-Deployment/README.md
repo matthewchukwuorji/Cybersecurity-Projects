@@ -2,7 +2,7 @@
 
 ## Live Application
 *Public URL:*  
-http://54.227.119.61
+http://54.227.119.61/
 
 ---
 
