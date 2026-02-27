@@ -42,6 +42,8 @@ sudo docker ps
 
 This exposed the SSH honeypot on TCP port 2222.
 
+![Screenshot of docker running](Screenshots/cowrie.png)
+
 ---
 
 ## Attack Simulation
