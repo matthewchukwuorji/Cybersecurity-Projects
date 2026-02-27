@@ -51,7 +51,7 @@ This repository contains hands-on ethical hacking and cybersecurity projects I�
 
 ### 8. Cowrie Honeypot Setup/Log
 - **Objective** Configure and simulate a attack on cowrie honeypot
-- [Project Details](08-cowrie-ssh-honeypot-lab)
+- [Project Details](cowrie-ssh-honeypot-lab)
 
 ## 🔹 About Me
 I’m an aspiring cybersecurity professional building practical skills in ethical hacking, SOC operations, Cloud computing and system defense. 
