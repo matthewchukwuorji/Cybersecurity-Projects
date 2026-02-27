@@ -42,7 +42,7 @@ sudo docker ps
 
 This exposed the SSH honeypot on TCP port 2222.
 
-![Screenshot of docker running](Screenshots/cowrie.png)
+![Screenshot of cowrie running](Screenshots/cowrie.png)
 
 ---
 
@@ -60,6 +60,8 @@ Result:
 - Port 2222 open
 - SSH service detected
 
+![Screenshot of nmap](Screenshots/nmap.png)
+
 ---
 
 ### Authentication Attempt
@@ -75,6 +77,8 @@ Credentials used:
 - Username: root
 - Password: 567890
 
+![Screenshot of ssh](Screenshots/ssh.png)
+
 ---
 
 ## Log Analysis
@@ -88,6 +92,8 @@ sudo docker logs cowrie | grep "login"
 Observed log entry:
 
 login attempt [b'root'/b'567890'] succeeded
+
+![Screenshot of cowrie log](Screenshots/cowrie_log.png)
 
 ### Key Findings
 
@@ -117,7 +123,9 @@ Captured evidence included:
 - SSH key exchange
 - Authentication negotiation
 
-Packet capture file included in repository.
+Packet capture file included in repository. ![Screenshot of pcap file](Screenshots/cowrie_attack.pcapng)
+
+![Screenshot of wireshark](Screenshots/wireshark.png)
 
 ---
 
