@@ -15,12 +15,14 @@
 
 ## Exact commands 
 **Port scan (SYN) — Kali**
+
 ```bash
 sudo nmap -sS -Pn -p1-500 192.168.100.50
 ```
 
 **ARP spoofing (MITM) — Kali**  
 (Enable forwarding on attacker, then poison victim & gateway)
+
 ```bash
 sudo sysctl -w net.ipv4.ip_forward=1
 sudo arpspoof -i <KALI_IFACE> -t 192.168.100.50 192.168.100.10
@@ -30,6 +32,7 @@ sudo arpspoof -i <KALI_IFACE> -t 192.168.100.10 192.168.100.50
 
 **DoS-like (controlled burst) — Kali**  
 (Short, isolated bursts only)
+
 ```bash
 # ICMP burst (controlled)
 sudo hping3 --icmp --count 1000 192.168.100.50
@@ -39,6 +42,7 @@ sudo hping3 --syn --rate 200 --count 1000 -p 80 192.168.100.50
 ```
 
 **Start Wireshark capture — Parrot**
+
 ```bash
 sudo wireshark
 # select the interface with 192.168.100.57 and Start capture
@@ -47,6 +51,7 @@ sudo wireshark
 ---
 
 ## Wireshark filters (paste into the display filter bar)
+
 - **SYN scan:**  
   ```
   tcp.flags.syn == 1 && tcp.flags.ack == 0 && ip.dst == 192.168.100.50
