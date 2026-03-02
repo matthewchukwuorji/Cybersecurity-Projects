@@ -12,6 +12,7 @@ The objective was to simulate attacker behavior, capture authentication attempts
 
 | Component | Role |
 |-----------|------|
+| Pfsense | Firewall |
 | Kali Linux | Attacker Machine |
 | Ubuntu Server | Target System |
 | Cowrie (Docker) | SSH Honeypot |
