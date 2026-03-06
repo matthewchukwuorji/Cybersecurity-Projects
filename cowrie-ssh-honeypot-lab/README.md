@@ -33,6 +33,7 @@ Cowrie was deployed inside a Docker container on Ubuntu Server.
 sudo apt install docker.io -y
 sudo docker pull cowrie/cowrie
 sudo docker run -d -p 2222:2222 --name cowrie cowrie/cowrie
+sudo docker start cowrie
 ```
 
 The container was verified using:
