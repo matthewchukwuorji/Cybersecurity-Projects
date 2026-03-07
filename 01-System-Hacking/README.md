@@ -28,7 +28,7 @@ The assessment successfully identified multiple vulnerabilities including a SQL 
 Target system IP address:
 
 ```
-192.168.56.102
+192.168.10.16
 ```
 
 ---
@@ -42,7 +42,7 @@ Initial reconnaissance was performed using **Zenmap**, the graphical interface f
 Command executed:
 
 ```bash
-nmap -T4 -A -v 192.168.56.102
+nmap -T4 -A -v 192.10.16
 ```
 
 Explanation of parameters:
@@ -69,7 +69,7 @@ The scan revealed several open services on the target system.
 
 These services provided multiple potential entry points for further testing.
 
-![Zenmap Scan Result](Screenshots/zenmap_scan.png)
+![Zenmap Scan Result](Screenshots/zenmap.png)
 
 ---
 
@@ -82,7 +82,7 @@ The Damn Vulnerable Web Application (DVWA) hosted on the target server was acces
 Application URL:
 
 ```
-http://192.168.56.102/dvwa
+http://192.168.10.16/dvwa
 ```
 
 Default login credentials:
@@ -94,8 +94,6 @@ Password: password
 
 After logging in, the security level was configured to **Low** to allow vulnerability testing.
 
-![DVWA Login](Screenshots/dvwa_login.png)
-
 ---
 
 ## SQL Injection
@@ -105,7 +103,7 @@ The SQL Injection module in DVWA was used to test the application for input vali
 Test payload:
 
 ```
-1' OR '1'='1
+1' OR '1 == 
 ```
 
 This payload alters the SQL query logic by forcing the condition to always evaluate as true.
@@ -126,15 +124,15 @@ The application returned multiple database entries including:
 
 ```
 admin
-gordonb
-1337
+gordon
+bob
 pablo
-smithy
+smith
 ```
 
 This confirms that the web application is vulnerable to SQL injection.
 
-![SQL Injection Result](Screenshots/sql_injection.png)
+![SQL Injection Result](Screenshots/dvwa_sql.png)
 
 ---
 
