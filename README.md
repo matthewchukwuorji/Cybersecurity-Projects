@@ -6,11 +6,9 @@ This repository contains hands-on ethical hacking and cybersecurity projects I�
 
 ## 🔹 Projects
 
-### 1. System Hacking – Gaining Access to a Vulnerable Machine
-- Objective: Exploit a vulnerable PostgreSQL service on Metasploitable2  
-- Tools: Nmap, Metasploit  
-- Key Steps: Scanning → Exploitation → Post-Exploitation → Privilege Escalation → Cover Tracks  
-- [Project Details](./01-System-Hacking)
+### 1. Vulnerability Assessment and Exploitation Lab
+This project demonstrates a vulnerability assessment and exploitation workflow conducted in a controlled lab environment. The objective was to identify security weaknesses on a vulnerable system, analyze discovered vulnerabilities, and demonstrate exploitation of a critical service vulnerability. Additionally, the Damn Vulnerable Web Application (DVWA) hosted on the target server was tested and confirmed to be vulnerable to SQL Injection.
+- [Project Details](./01-Vunlnerability-Scan-Exploit)
 
 ---
 
