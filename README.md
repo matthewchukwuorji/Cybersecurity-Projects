@@ -21,9 +21,7 @@ This project demonstrates a vulnerability assessment and exploitation workflow c
 --- 
 
 ### 3. Website Hacking – Accessing Admin Panel
-- **Objective:** Exploit DVWA vulnerabilities (SQL Injection & Command Injection)  
-- **Tools:** DVWA, John the Ripper, Kali Linux  
-- **Key Steps:** SQL Injection → Extract credentials → Hash cracking → Command Injection → Admin access  
+Demonstrate exploitation techniques (SQL Injection and Command Injection) on a controlled DVWA instance to access the admin panel, extract credentials, and demonstrate remote command execution as the web user.  
 - [Project Details](./03-Website-Hacking/README.md)
 
 ### 4. WIFI_Hacking
