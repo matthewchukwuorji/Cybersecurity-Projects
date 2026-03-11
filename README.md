@@ -42,7 +42,7 @@ Demonstrate exploitation techniques (SQL Injection and Command Injection) on a c
 - [Project Detals](./06-CCTV_Hacking/README.md)
 
 ### 7. Pretashop AWS Demo
-- **Objective** To install and host a PrestaShop e-commerce application on a cloud server with a separate database using AWS.
+This project demonstrates the deployment of an open-source e-commerce platform (PrestaShop) on AWS using a secure architecture. The web application is hosted on Amazon EC2, while the database is hosted separately on **Amazon RDS (MySQL). The deployment was completed using AWS Free Tier resources.
 - [Project Details](07-PrestaShop-Deployment/README.md)
 
 ### 8. Cowrie Honeypot Setup/Log
