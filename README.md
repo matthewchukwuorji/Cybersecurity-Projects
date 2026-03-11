@@ -46,7 +46,8 @@ This project demonstrates the deployment of an open-source e-commerce platform (
 - [Project Details](07-PrestaShop-Deployment/README.md)
 
 ### 8. Cowrie Honeypot Setup/Log
-- **Objective** Configure and simulate a attack on cowrie honeypot
+This project documents the deployment of a Cowrie SSH honeypot using Docker and the detection of an SSH authentication attack within a controlled lab environment.
+The objective was to simulate attacker behavior, capture authentication attempts, analyze network traffic, and produce a structured incident report based on collected evidence.
 - [Project Details](cowrie-ssh-honeypot-lab)
 
 ## 🔹 About Me
