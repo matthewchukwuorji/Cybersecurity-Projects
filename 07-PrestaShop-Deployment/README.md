@@ -2,7 +2,7 @@
 
 ## Live Application
 *Public URL:*  
-http://54.227.119.61/
+http://52.20.99.83/
 
 ---
 
@@ -135,6 +135,11 @@ sudo chmod -R 755 /var/www/html
 
 - Missing PHP extensions during installation
 - Apache rewrite configuration issues
+```
+sudo nano /etc/apache2/apache2.conf
+<Directory /var/www/>
+Change AllowOverride None → AllowOverride All
+```
 - Incorrect PrestaShop package downloaded initially
 - 404 error after attaching Elastic IP
 
