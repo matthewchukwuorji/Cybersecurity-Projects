@@ -14,7 +14,7 @@ This project demonstrates a vulnerability assessment and exploitation workflow c
 
 ### 2. Pretashop AWS Demo
 This project demonstrates the deployment of an open-source e-commerce platform (PrestaShop) on AWS using a secure architecture. The web application is hosted on Amazon EC2, while the database is hosted separately on **Amazon RDS (MySQL). The deployment was completed using AWS Free Tier resources.
-- [Project Details](02-PrestaShop-Deployment/README.md)
+- [Project Details](02-PrestaShop-Deployment)
 
 ### 3. Cowrie Honeypot Setup/Log
 This project documents the deployment of a Cowrie SSH honeypot using Docker and the detection of an SSH authentication attack within a controlled lab environment.
