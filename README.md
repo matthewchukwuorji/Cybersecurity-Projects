@@ -19,7 +19,7 @@ This project demonstrates the deployment of an open-source e-commerce platform (
 ### 3. Cowrie Honeypot Setup/Log
 This project documents the deployment of a Cowrie SSH honeypot using Docker and the detection of an SSH authentication attack within a controlled lab environment.
 The objective was to simulate attacker behavior, capture authentication attempts, analyze network traffic, and produce a structured incident report based on collected evidence.
-- [Project Details](cowrie-ssh-honeypot-lab)
+- [Project Details](03-cowrie-ssh-honeypot-lab)
 
 ## 🔹 About Me
 I am a cybersecurity and IT professional with a background in IT support, security operations, and cloud technologies. I enjoy solving technical problems, improving security posture, and building secure and reliable system across on-premises and cloud environments. 
