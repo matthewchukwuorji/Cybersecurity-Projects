@@ -21,6 +21,10 @@ This project documents the deployment of a Cowrie SSH honeypot using Docker and 
 The objective was to simulate attacker behavior, capture authentication attempts, analyze network traffic, and produce a structured incident report based on collected evidence.
 - [Project Details](03-cowrie-ssh-honeypot-lab)
 
+### 4. Cyber Threat Intelligence
+This Cyber Threat Intelligence Assessment evaluates the cyber threat landscape relevant to Desert Oil, a simulated oil and gas organization headquartered in Saudi Arabia. The assessment was conducted using OpenCTI as the primary threat intelligence platform, supported by AlienVault Open Threat Exchange (OTX), MITRE ATT&CK, CISA advisories, and other industry-recognized intelligence sources.
+- [Project Details](04-Cyber-Threat-Intelligence)
+
 ## 🔹 About Me
 I am a cybersecurity and IT professional with a background in IT support, security operations, and cloud technologies. I enjoy solving technical problems, improving security posture, and building secure and reliable system across on-premises and cloud environments. 
 
