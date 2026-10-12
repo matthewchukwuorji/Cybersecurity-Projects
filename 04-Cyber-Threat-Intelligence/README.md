@@ -65,7 +65,7 @@ Analysis of OpenCTI intelligence, combined with regional threat activity and sec
 - Fox Kitten
 - HEXANE
 
-> **Insert Sector Threat Landscape Screenshot Here**
+![Screenshot of industry focus threat landscape](Screenshots/sector_threat_landscape.png)
 
 ---
 
