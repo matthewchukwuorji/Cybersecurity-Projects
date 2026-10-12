@@ -296,7 +296,7 @@ Analysis revealed three recurring attack patterns:
 | CVE-2019-1579 | Palo Alto GlobalProtect | 9.8 | Fox Kitten | Remote code execution |
 | CVE-2019-19781 | Citrix ADC / NetScaler Gateway | 9.8 | Fox Kitten | Directory traversal and code execution |
 
-> **Insert Vulnerability Analysis Screenshot Here**
+![Screenshot of vulnerability analysis](Screenshots/vulnerability_analysis.png)
 
 ---
 
@@ -310,7 +310,7 @@ Analysis revealed three recurring attack patterns:
 | December 2019 | ZeroCleare | Destructive malware targeting energy organizations |
 | 2024 | CISA/FBI/DC3 Advisory AA24-241A | Fox Kitten exploitation of remote-access infrastructure |
 
-> **Insert Industry Intelligence Screenshot Here**
+![Screenshot of notable industry alert](Screenshots/industry_alert.png)
 
 ---
 
@@ -320,6 +320,8 @@ OpenCTI intelligence identified several threat groups associated with Saudi Arab
 
 - MuddyWater
 - HEXANE
+
+![Screenshot of national threat landscape](Screenshots/national_threat_landscape.png)
 
 ---
 
@@ -372,8 +374,7 @@ MuddyWater targets:
 - T1003 – Credential Dumping
 - T1567.002 – Exfiltration to Cloud Storage
 
-> **Insert MuddyWater Screenshot Here**
-
+![Screenshot of muddywater](Screenshots/muddywater.png)
 ---
 
 ## Threat 2: HEXANE
