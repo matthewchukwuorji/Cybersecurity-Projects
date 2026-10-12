@@ -418,7 +418,7 @@ HEXANE targets:
 - T1003 – Credential Dumping
 - T1567.002 – Exfiltration to Cloud Storage
 
-> **Insert HEXANE Screenshot Here**
+![Screenshot of hexane](Screenshots/hexane.png)
 
 ---
 
@@ -491,7 +491,7 @@ Unknown
 - Session Hijacking (T1185)
 - Cookie Theft (T1539)
 
-> **Insert CL-CRI-1171 Screenshots Here**
+![Screenshot of government](Screenshots/government.png)
 
 ---
 
@@ -552,7 +552,7 @@ Finance Sector
 
 - T1582 (SMS Control)
 
-> **Insert Cerberus Screenshots Here**
+![Screenshot of finance](Screenshots/cerberus.png)
 
 ---
 
@@ -612,7 +612,7 @@ Technology Sector
 
 - Exfiltration to Cloud Storage (T1567.002)
 
-> **Insert PolinRider Screenshots Here**
+![Screenshot of technology](Screenshots/technology.png)
 
 ---
 
@@ -654,7 +654,7 @@ CyberAv3ngers is an Iranian state-linked threat group known for targeting operat
 
 Although Desert Oil has not been directly targeted, CyberAv3ngers targets the same OT environments used throughout modern energy operations. Their activity demonstrates the risks posed by exposed industrial devices, weak passwords, and inadequate network segmentation.
 
-> **Insert CyberAv3ngers Screenshots Here**
+![Screenshot of cyberavengers](Screenshots/cyberavengers.png)
 
 ---
 
